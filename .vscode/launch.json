@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (OpenOCD)",
+            "servertype": "openocd",
+            "type": "cortex-debug",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/bin/adsb_radar",
+            "device": "STM32F746NG",
+            "configFiles": [
+                "board/stm32f746g-disco.cfg"
+            ],
+            // Force OpenOCD to use the FPB hardware unit.
+            "serverArgs": [
+                "-c",
+                "gdb_breakpoint_override hard"
+            ],
+            "svdFile": "${workspaceFolder}/.vscode/STM32F746.svd",
+            "runToEntryPoint": "main",
+            "preLaunchCommands": [
+                "set remotetimeout 10000"
+            ],
+            "showDevDebugOutput": "raw",
+            "preLaunchTask": "Flash"
+        }
+    ]
+}

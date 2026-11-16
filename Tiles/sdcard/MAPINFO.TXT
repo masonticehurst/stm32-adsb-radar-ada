@@ -1,0 +1,10 @@
+bbox west,south,east,north = -75.9133, 39.2671, -72.0987, 42.1585
+format = rgb565, record = 131072 bytes, header = 2048 bytes
+
+Z08.BIN  zoom  8  x_min 74  y_min 94  grid 3x4  tiles 12/12 present  1.5 MiB
+Z09.BIN  zoom  9  x_min 148  y_min 189  grid 6x7  tiles 42/42 present  5.3 MiB
+Z10.BIN  zoom 10  x_min 296  y_min 379  grid 11x12  tiles 132/132 present  16.5 MiB
+Z11.BIN  zoom 11  x_min 592  y_min 759  grid 22x22  tiles 484/484 present  60.5 MiB
+Z12.BIN  zoom 12  x_min 1184  y_min 1518  grid 44x44  tiles 1936/1936 present  242.0 MiB
+
+total 325.8 MiB

@@ -1,0 +1,15 @@
+/obj/
+/bin/
+/alire/
+/config/
+/Tiles/.render_cache/
+/Tiles/__pycache__/
+/CLAUDE.md
+/Tiles/New_York/
+/Tiles/class_airspace_shape_files.zip
+/Tiles/sdcard/screen_z*.png
+/Tiles/sdcard/preview_z*.png
+*.mov
+*.MOV
+/Tiles/tiles_osm/
+__pycache__/

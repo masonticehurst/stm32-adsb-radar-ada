@@ -1,0 +1,28 @@
+name = "adsb_radar"
+description = "ADS-B traffic display and moving map for the STM32F746G-DISCO"
+version = "0.1.0-dev"
+
+authors = ["Mason Ticehurst"]
+maintainers = ["Mason Ticehurst <mason0@umd.edu>"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+executables = ["adsb_radar"]
+
+[[depends-on]]
+stm32f746disco = "0.1.0"
+stm32_hal = "0.1.0"
+gnat_arm_elf = "12.2.1"
+adl_middleware = "0.4.0-dev"
+stm32_gui = "0.1.0"
+
+[build-switches]
+"*".optimization = ["-O2", "-g"]
+
+[[pins]]
+gnat_arm_elf = { version='12.2.1' }
+stm32_hal = { url='https://github.com/GNAT-Academic-Program/stm32_hal.git' }
+stm32f746disco = { url='https://github.com/GNAT-Academic-Program/stm32f746disco.git' }
+adl_middleware = { url='https://github.com/Fabien-Chouteau/adl-middleware' }
+stm32_gui = { url='https://github.com/GNAT-Academic-Program/stm32_gui.git' }
