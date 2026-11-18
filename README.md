@@ -10,8 +10,6 @@ Final project for ENPM615, University of Maryland.
 ![Live traffic over the moving map with a GPS fix](screenshots/with_gps.png)
 > **Advisory only. Not for navigation.**
 
----
-
 ## Features
 
 - **Moving map** from pre-rendered tiles on a microSD card. The map follows the
@@ -54,8 +52,6 @@ The details panel shows:
 Without a fix, the map uses a built-in start position, or the last known fix if the
 fix was lost.
 
----
-
 ## Hardware
 
 | Part | Notes |
@@ -77,8 +73,6 @@ fix was lost.
 | GPS VCC | 5V | GPS module (its I/O is 3.3 V) |
 | USART1 (ST-LINK virtual COM port) | — | Debug log at 115200 baud |
 
----
-
 ## Building and flashing
 
 Requirements:
@@ -95,19 +89,6 @@ openocd -f board/stm32f746g-disco.cfg -c "program bin/adsb_radar verify reset ex
 In VS Code, the **Build** and **Flash** tasks in `.vscode/tasks.json` run the same
 commands.
 
-The project uses the `embedded-stm32f746disco` runtime. Our code is built at
-`-O2 -g`, and the SD card read loop needs `-O2`, so don't build at `-O0`.
-
-Dependencies, pinned in `alire.toml`:
-
-- [`stm32f746disco`](https://github.com/GNAT-Academic-Program/stm32f746disco),
-  [`stm32_hal`](https://github.com/GNAT-Academic-Program/stm32_hal) and
-  [`stm32_gui`](https://github.com/GNAT-Academic-Program/stm32_gui), from the GNAT
-  Academic Program, derived from AdaCore's Ada Drivers Library;
-- [`adl_middleware`](https://github.com/Fabien-Chouteau/adl-middleware), for the FAT
-  file system and bitmap fonts.
-
----
 
 ## Preparing the SD card
 
