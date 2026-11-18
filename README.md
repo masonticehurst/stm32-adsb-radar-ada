@@ -192,8 +192,3 @@ tools/screenshot.py  capture the LCD over the ST-LINK into a PNG (OpenOCD)
   styles by [Protomaps](https://protomaps.com/). Rendered with
   [MapLibre GL JS](https://maplibre.org/).
 - **Aeronautical data:** FAA NASR airspace and airport data (public domain).
-
-## License
-
-Our own code is licensed `MIT OR Apache-2.0 WITH LLVM-exception`, as declared in
-`alire.toml`. Third-party crates and data keep their own licenses.
