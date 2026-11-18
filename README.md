@@ -7,13 +7,8 @@ GPS position.
 
 Final project for ENPM615, University of Maryland.
 
-> **Advisory only. Not for navigation.** This is a student project. It is not
-> certified, and the map data is not an aeronautical chart.
-
 ![Live traffic over the moving map with a GPS fix](screenshots/with_gps.png)
-
-*Screenshot from the board: own ship (white cross) with a 4-satellite GPS fix,
-range rings, and ADS-B traffic with callsigns and altitudes (hundreds of feet).*
+> **Advisory only. Not for navigation.**
 
 ---
 
